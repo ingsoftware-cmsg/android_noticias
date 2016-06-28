@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NoticiasCMSG.iml" filepath="$PROJECT_DIR$/NoticiasCMSG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_noticias.iml" filepath="$PROJECT_DIR$/android_noticias.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
