@@ -10,7 +10,23 @@ import android.widget.TextView;
  */
 public class Noticias {
 
-    String titulo,resumen;
+    String titulo,resumen,contenido,fecha;
+
+    public String getContenido() {
+        return contenido;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
 
     public Noticias(String titulo, String resumen) {
         this.titulo = titulo;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cmsg.cl.noticiascmsg.DetalleActivity"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:nestedScrollingEnabled="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Titulo noticia"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sin despreciar oyo mal vio honestidad envidiaron suspirando. Me tapete arrojo bronce lo seguia veneno. El cafe es cuna onda. Si sacar no ya busca dogma sento. Cuarto volado graves iba han. Arte etc algo ella dios una. Va salvador ti sonrisas primeros cantando la. Gas servicios naufragos las monisimas incapaces lombardia estodecia ido. Triunfante murmuraban en el ir respetable. Consta frases lumbre ese aun tenido regalo los vez.   Palabrota reumatico ex el lombardia aptitudes elegancia un. Lo inepto atenta mismos tu sendas. Pegado una merito exceso exacta don eterno volado. De solemnidad chillerias remediarlo tu me un. Conciencia si yo interprete oh compadecer taciturnos le. Ch cristiano el sebastian la cubiertas aceptando ma.   Ve colorado un ah fantasia instante. Escaparme adoracion cabellera chi por suo averiados conceptos. Ya un el oscuros arrulla su vendria. Carcel estilo un pedazo se no cosido mundos. Cafe oir dar pena supo muy vio boga. Despreciar reconocian quehaceres si lo sr ha temporadas. Buscaban si llegaban benditos adentros llevaron ni.   Hoy repasaban mil animacion sol caballero doy elementos. Opaca ahi apego dante rusia los. Sucedia oir escapar condujo modales nos. Reconocian fue asi intervalos etc expresivas silencioso abofeteado. Ma so entro ti seria tubos casta viejo tenia. He ah firmaba pasaron ir fingian lenguas. Don feo caprichos muy sentencia debilidad garantias temeraria. No ha exquisitas puntiaguda de pastosidad argentinas. Pudor me me pasar dogma en genio llego. So emplear el mandaba ingrato. "
+            android:id="@+id/textView3"
+            android:gravity="fill_horizontal"
+            android:padding="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp">
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

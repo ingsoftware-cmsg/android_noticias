@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         TextView mTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
         tabs.addTab(tabs.newTab().setText("Hoy"));
         tabs.addTab(tabs.newTab().setText("Esta Semana"));
-        tabs.addTab(tabs.newTab().setText("Este mes"));
+        tabs.addTab(tabs.newTab().setText("Hace 30 dias"));
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PageAdapter adapter = new PageAdapter

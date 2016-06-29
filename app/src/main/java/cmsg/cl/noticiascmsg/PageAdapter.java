@@ -8,8 +8,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import cmsg.cl.noticiascmsg.fragments.HoyFragment;
+import cmsg.cl.noticiascmsg.fragments.SemanaFragment;
 import cmsg.cl.noticiascmsg.fragments.MesFragment;
-import cmsg.cl.noticiascmsg.fragments.YearFragment;
 
 public class PageAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;
@@ -27,10 +27,10 @@ public class PageAdapter extends FragmentStatePagerAdapter {
                 HoyFragment tab1 = new HoyFragment();
                 return tab1;
             case 1:
-                MesFragment tab2 = new MesFragment();
+                SemanaFragment tab2 = new SemanaFragment();
                 return tab2;
             case 2:
-                YearFragment tab3 = new YearFragment();
+                MesFragment tab3 = new MesFragment();
                 return tab3;
             default:
                 return null;

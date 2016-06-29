@@ -1,19 +1,24 @@
 package cmsg.cl.noticiascmsg.fragments;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import cmsg.cl.noticiascmsg.DetalleActivity;
 import cmsg.cl.noticiascmsg.R;
+import cmsg.cl.noticiascmsg.clases.MiDbHelper;
 import cmsg.cl.noticiascmsg.clases.Noticias;
 import cmsg.cl.noticiascmsg.clases.NoticiasAdapter;
 
@@ -24,13 +29,13 @@ public class HoyFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+    private static final int PEND = 179;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
    // private OnFragmentInteractionListener mListener;
-
+    MiDbHelper miDbHelper;
     TextView lblNombre;
     ListView listViewNoticias;
     ArrayList<Noticias> arrayListNoticias = new ArrayList<>();
@@ -61,6 +66,8 @@ public class HoyFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
        // llenarLista();
+
+
 
     }
 
@@ -113,6 +120,20 @@ public class HoyFragment extends Fragment {
         }
 
         listViewNoticias.setAdapter(noticiasAdapter);
+
+
+        listViewNoticias.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    Intent intent = new Intent(getContext(), DetalleActivity.class);
+                    Noticias noticias = arrayListNoticias.get(i);
+                    intent.putExtra("Rut", noticias.getTitulo());
+                    intent.putExtra("fecha", noticias.getFecha());
+                    startActivity(intent);
+
+            }
+        });
 
         return view;
     }
